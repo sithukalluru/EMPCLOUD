@@ -1,0 +1,1971 @@
+<html>
+<head>
+<title>TestNG:  Hrms Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Hrms Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/8/2</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 21 16:36:36 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1874 seconds (1874067 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest.initialization()'><b>initialization</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.110
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464715f905e295602114d78bc82c0399
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.emp.qa.base.TestBase.initialization(TestBase.java:195)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1122771071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1122771071'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.110
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464715f905e295602114d78bc82c0399
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.emp.qa.base.TestBase.initialization(TestBase.java:195)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>92</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest@7526515b</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest.setUp()'><b>setUp</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f90bf0714ec51ad9d636acb9a0c694ca
+*** Element info: {Using=xpath, value=//input[@id=&apos;amember-login&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.LoginPage.login(LoginPage.java:64)
+	at com.emp.qa.base.TestBase.setUp(TestBase.java:248)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2025177759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2025177759'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f90bf0714ec51ad9d636acb9a0c694ca
+*** Element info: {Using=xpath, value=//input[@id=&apos;amember-login&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.LoginPage.login(LoginPage.java:64)
+	at com.emp.qa.base.TestBase.setUp(TestBase.java:248)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest@1ed4ae0f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest.setUp()'><b>setUp</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest</td>
+<td></td>
+<td>-1645443364</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest@7526515b</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest.tearDown()'><b>tearDown</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest</td>
+<td></td>
+<td>-1645443411</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest@1ed4ae0f</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest.tearDown()'><b>tearDown</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest</td>
+<td></td>
+<td>-1645443364</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest@7526515b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomePensionTest.HrmsPayrollDeclarationOtherincomePensionTest()'><b>HrmsPayrollDeclarationOtherincomePensionTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomePensionTest<br/>
+<a href="#Output-470758061" onClick='toggleBox("Output-470758061", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-470758061" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-470758061">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Declaration<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on OtherIncome<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Pension<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on FinancialYear_Dropdown<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on SearchBar<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Search_Button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f074f62e4b0dae188d159f35e313cc7b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:221)
+	at com.emp.qa.pages.HrmsPayrollDeclarationOtherincomePensionPage.HrmsPayrollDeclarationOtherincomePensionPage(HrmsPayrollDeclarationOtherincomePensionPage.java:133)
+	at com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomePensionTest.HrmsPayrollDeclarationOtherincomePensionTest(HrmsPayrollDeclarationOtherincomePensionTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace470758061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace470758061'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f074f62e4b0dae188d159f35e313cc7b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:221)
+	at com.emp.qa.pages.HrmsPayrollDeclarationOtherincomePensionPage.HrmsPayrollDeclarationOtherincomePensionPage(HrmsPayrollDeclarationOtherincomePensionPage.java:133)
+	at com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomePensionTest.HrmsPayrollDeclarationOtherincomePensionTest(HrmsPayrollDeclarationOtherincomePensionTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomePensionTest@750e2b97</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest()'><b>HrmsPayrollAdvancedSettingsPtsettingsOverviewTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest<br/>
+<a href="#Output-1649663857" onClick='toggleBox("Output-1649663857", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1649663857" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1649663857">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on AdvancedSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on PTSettings<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on PTSettings<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on overview<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on overview<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Search_Bar<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Search_BarButton<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;CODE-123&quot;]/td[6]/a&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c5fb5c51e013e02f1d9dab3ea55b024
+*** Element info: {Using=xpath, value=//*[@id=&quot;CODE-123&quot;]/td[6]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollAdvancedSettingsPtsettingsOverviewPage.HrmsPayrollAdvancedSettingsPtsettingsOverviewPage(HrmsPayrollAdvancedSettingsPtsettingsOverviewPage.java:129)
+	at com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest(HrmsPayrollAdvancedSettingsPtsettingsOverviewTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1649663857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1649663857'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;CODE-123&quot;]/td[6]/a&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c5fb5c51e013e02f1d9dab3ea55b024
+*** Element info: {Using=xpath, value=//*[@id=&quot;CODE-123&quot;]/td[6]/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollAdvancedSettingsPtsettingsOverviewPage.HrmsPayrollAdvancedSettingsPtsettingsOverviewPage(HrmsPayrollAdvancedSettingsPtsettingsOverviewPage.java:129)
+	at com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest(HrmsPayrollAdvancedSettingsPtsettingsOverviewTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>55</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsOverviewTest@f0c8a99</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollAttendanceandLeaveTest.HrmsPayrollRunpayrollAttendanceandLeaveTest()'><b>HrmsPayrollRunpayrollAttendanceandLeaveTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollAttendanceandLeaveTest<br/>
+<a href="#Output-1364123980" onClick='toggleBox("Output-1364123980", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1364123980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1364123980">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 004e0872da3c6b618a2c154f0c4debb4
+*** Element info: {Using=xpath, value=(//span[@class=&apos;menu-text&apos;][contains(.,&apos;Payroll&apos;)])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollRunpayrollAttendanceandLeavePage.HrmsPayrollRunpayrollAttendanceandLeavePage(HrmsPayrollRunpayrollAttendanceandLeavePage.java:80)
+	at com.emp.qa.testcases.HrmsPayrollRunpayrollAttendanceandLeaveTest.HrmsPayrollRunpayrollAttendanceandLeaveTest(HrmsPayrollRunpayrollAttendanceandLeaveTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1364123980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1364123980'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 004e0872da3c6b618a2c154f0c4debb4
+*** Element info: {Using=xpath, value=(//span[@class=&apos;menu-text&apos;][contains(.,&apos;Payroll&apos;)])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollRunpayrollAttendanceandLeavePage.HrmsPayrollRunpayrollAttendanceandLeavePage(HrmsPayrollRunpayrollAttendanceandLeavePage.java:80)
+	at com.emp.qa.testcases.HrmsPayrollRunpayrollAttendanceandLeaveTest.HrmsPayrollRunpayrollAttendanceandLeaveTest(HrmsPayrollRunpayrollAttendanceandLeaveTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>47</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollAttendanceandLeaveTest@f78a47e</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvacedSettingsDeclarationSettingsTest.HrmsPayrollAdvacedSettingsDeclarationSettingsTest()'><b>HrmsPayrollAdvacedSettingsDeclarationSettingsTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvacedSettingsDeclarationSettingsTest<br/>
+<a href="#Output-458593254" onClick='toggleBox("Output-458593254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-458593254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-458593254">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f2f4b8e730dc30067a6696e6843da35
+*** Element info: {Using=xpath, value=(//a[@href=&apos;run-payroll&apos;][contains(.,&apos;Payroll&apos;)])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollAdvacedSettingsDeclarationSettingsPage.HrmsPayrollAdvacedSettingsDeclarationSettingsPage(HrmsPayrollAdvacedSettingsDeclarationSettingsPage.java:74)
+	at com.emp.qa.testcases.HrmsPayrollAdvacedSettingsDeclarationSettingsTest.HrmsPayrollAdvacedSettingsDeclarationSettingsTest(HrmsPayrollAdvacedSettingsDeclarationSettingsTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace458593254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace458593254'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f2f4b8e730dc30067a6696e6843da35
+*** Element info: {Using=xpath, value=(//a[@href=&apos;run-payroll&apos;][contains(.,&apos;Payroll&apos;)])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollAdvacedSettingsDeclarationSettingsPage.HrmsPayrollAdvacedSettingsDeclarationSettingsPage(HrmsPayrollAdvacedSettingsDeclarationSettingsPage.java:74)
+	at com.emp.qa.testcases.HrmsPayrollAdvacedSettingsDeclarationSettingsTest.HrmsPayrollAdvacedSettingsDeclarationSettingsTest(HrmsPayrollAdvacedSettingsDeclarationSettingsTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvacedSettingsDeclarationSettingsTest@740cae06</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvancedSettingsTest.HrmsPayrollAdvancedSettingsTest()'><b>HrmsPayrollAdvancedSettingsTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvancedSettingsTest<br/>
+<a href="#Output-2102999996" onClick='toggleBox("Output-2102999996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2102999996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2102999996">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on AdvancedSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on Payroll_Settings<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Pay_Settings<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Paycycle_From<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Paycycle_To<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on PayRoll_LeaveFrom<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on PayRoll_LeaveTo<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d21dc663a3fd2fbb20e42d4368a90c45
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:311)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:187)
+	at com.emp.qa.util.Helpers.selectDropDownValue(Helpers.java:338)
+	at com.emp.qa.pages.HrmsPayrollAdvancedSettingsPage.HrmsPayrollAdvancedSettingsPage(HrmsPayrollAdvancedSettingsPage.java:155)
+	at com.emp.qa.testcases.HrmsPayrollAdvancedSettingsTest.HrmsPayrollAdvancedSettingsTest(HrmsPayrollAdvancedSettingsTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2102999996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2102999996'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d21dc663a3fd2fbb20e42d4368a90c45
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:311)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:187)
+	at com.emp.qa.util.Helpers.selectDropDownValue(Helpers.java:338)
+	at com.emp.qa.pages.HrmsPayrollAdvancedSettingsPage.HrmsPayrollAdvancedSettingsPage(HrmsPayrollAdvancedSettingsPage.java:155)
+	at com.emp.qa.testcases.HrmsPayrollAdvancedSettingsTest.HrmsPayrollAdvancedSettingsTest(HrmsPayrollAdvancedSettingsTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>34</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvancedSettingsTest@2e385cce</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollDeclarationTaxSchemeTest.HrmsPayrollDeclarationTaxSchemeTest()'><b>HrmsPayrollDeclarationTaxSchemeTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollDeclarationTaxSchemeTest<br/>
+<a href="#Output-1163059848" onClick='toggleBox("Output-1163059848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1163059848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1163059848">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Declaration<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on TaxScheme<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on EmployeeDropdown<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Search_Bar<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on SearchBarclick<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;taxScheme24858&apos;]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ff69d84833aee6fc54030a5d06c3328
+*** Element info: {Using=xpath, value=//select[@id=&apos;taxScheme24858&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollDeclarationTaxSchemePage.HrmsPayrollDeclarationTaxSchemePage(HrmsPayrollDeclarationTaxSchemePage.java:117)
+	at com.emp.qa.testcases.HrmsPayrollDeclarationTaxSchemeTest.HrmsPayrollDeclarationTaxSchemeTest(HrmsPayrollDeclarationTaxSchemeTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1163059848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1163059848'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;taxScheme24858&apos;]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ff69d84833aee6fc54030a5d06c3328
+*** Element info: {Using=xpath, value=//select[@id=&apos;taxScheme24858&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsPayrollDeclarationTaxSchemePage.HrmsPayrollDeclarationTaxSchemePage(HrmsPayrollDeclarationTaxSchemePage.java:117)
+	at com.emp.qa.testcases.HrmsPayrollDeclarationTaxSchemeTest.HrmsPayrollDeclarationTaxSchemeTest(HrmsPayrollDeclarationTaxSchemeTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>50</td>
+<td>com.emp.qa.testcases.HrmsPayrollDeclarationTaxSchemeTest@d86a6f</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsLeavesTest.HrmsLeavesTest()'><b>HrmsLeavesTest</b><br>Test class: com.emp.qa.testcases.HrmsLeavesTest<br/>
+<a href="#Output-693421097" onClick='toggleBox("Output-693421097", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-693421097" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-693421097">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Attendance<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Leaves<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  AddnewLeaves<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 24858
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
+	at com.emp.qa.util.Helpers.selectDropDownValue(Helpers.java:338)
+	at com.emp.qa.pages.HrmsLeavesPage.HrmsLeavesPage(HrmsLeavesPage.java:129)
+	at com.emp.qa.testcases.HrmsLeavesTest.HrmsLeavesTest(HrmsLeavesTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace693421097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693421097'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 24858
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
+	at com.emp.qa.util.Helpers.selectDropDownValue(Helpers.java:338)
+	at com.emp.qa.pages.HrmsLeavesPage.HrmsLeavesPage(HrmsLeavesPage.java:129)
+	at com.emp.qa.testcases.HrmsLeavesTest.HrmsLeavesTest(HrmsLeavesTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>66</td>
+<td>com.emp.qa.testcases.HrmsLeavesTest@71ba6d4e</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest()'><b>HrmsPayrollDeclarationOtherincomeOtherthanSavingTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest<br/>
+<a href="#Output-214170716" onClick='toggleBox("Output-214170716", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-214170716" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-214170716">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Declaration<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on OtherIncome<br/>
+<B><font color = 'blue'>Step5.</font></B> clicked on OtherThan_Savings<br/>
+<B><font color = 'blue'>Step6.</font></B> clicked on Financialyear_DropDown<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Search_Bar<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Searchbar_Button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 394f1214053b43fa44f206b561daa912
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:221)
+	at com.emp.qa.pages.HrmsPayrollDeclarationOtherincomeOtherthanSavingPage.HrmsPayrollDeclarationOtherincomeOtherthanSavingPage(HrmsPayrollDeclarationOtherincomeOtherthanSavingPage.java:127)
+	at com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest(HrmsPayrollDeclarationOtherincomeOtherthanSavingTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace214170716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace214170716'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 394f1214053b43fa44f206b561daa912
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:221)
+	at com.emp.qa.pages.HrmsPayrollDeclarationOtherincomeOtherthanSavingPage.HrmsPayrollDeclarationOtherincomeOtherthanSavingPage(HrmsPayrollDeclarationOtherincomeOtherthanSavingPage.java:127)
+	at com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest(HrmsPayrollDeclarationOtherincomeOtherthanSavingTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeOtherthanSavingTest@5ab956d7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunPayrollPayoutTest.HrmsPayrollRunPayrollPayoutTest()'><b>HrmsPayrollRunPayrollPayoutTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunPayrollPayoutTest<br/>
+<a href="#Output-1037954968" onClick='toggleBox("Output-1037954968", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1037954968" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1037954968">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Payout<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on July<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on August<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on September<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on October<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Searchbar<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunPayrollPayoutTest@54c5a2ff</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeBasicDetailsTest.HrmsEmployeeBasicDetailsPage()'><b>HrmsEmployeeBasicDetailsPage</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeBasicDetailsTest<br/>
+<a href="#Output-1046009438" onClick='toggleBox("Output-1046009438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1046009438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1046009438">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on EditBasicDetails<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on MaritialStatus<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Type<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Phonenumber<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on PersonalEmail<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on CurrentAdress<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on SameasCurrentAdress<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on BasicDetailsSave_Button<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.emp.qa.testcases.HrmsEmployeeBasicDetailsTest@38cee291</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsAttendanceSettingsTest.HrmsAttendanceSettingsTest()'><b>HrmsAttendanceSettingsTest</b><br>Test class: com.emp.qa.testcases.HrmsAttendanceSettingsTest<br/>
+<a href="#Output-1010361023" onClick='toggleBox("Output-1010361023", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1010361023" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1010361023">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Attendance<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Settings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on ActiveHours<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on AttendanceHours<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Update_Button<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.emp.qa.testcases.HrmsAttendanceSettingsTest@63376bed</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvancedSettingsEsiSettingsTest.HrmsPayrollAdvancedSettingsEsiSettingsTest()'><b>HrmsPayrollAdvancedSettingsEsiSettingsTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvancedSettingsEsiSettingsTest<br/>
+<a href="#Output-1060491581" onClick='toggleBox("Output-1060491581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060491581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060491581">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on AdvancedSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on Pf_Esisettings<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Esi_settings<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on MonthlyCtcForEsi<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvancedSettingsEsiSettingsTest@298a5e20</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeIncomefromPreviousEmployerTest.HrmsPayrollDeclarationOtherincomeIncomefromPreviousEmployerTest()'><b>HrmsPayrollDeclarationOtherincomeIncomefromPreviousEmployerTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeIncomefromPreviousEmployerTest<br/>
+<a href="#Output-1277118487" onClick='toggleBox("Output-1277118487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1277118487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1277118487">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Declaration<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on OtherIncome<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on IncomefromPrevious<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on FinancialYear_DropDown<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on SearchBar<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on SearchButton<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on MoreData<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Scroller<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on Close_Button<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeIncomefromPreviousEmployerTest@3e27aa33</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsAttendannceViewTest.HrmsAttendanceOverrideTest()'><b>HrmsAttendanceOverrideTest</b><br>Test class: com.emp.qa.testcases.HrmsAttendannceViewTest<br/>
+<a href="#Output-394663183" onClick='toggleBox("Output-394663183", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-394663183" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-394663183">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Attendance<br/>
+<B><font color = 'blue'>Step3 .</font></B> Entered data into SearchField<br/>
+<B><font color = 'blue'>Step4 .</font></B> Clicked on SearchButton<br/>
+<B><font color = 'blue'>Step5 .</font></B> Clicked on Scroller<br/>
+<B><font color = 'blue'>Step6 .</font></B> Clicked on ViewSymbol<br/>
+<B><font color = 'blue'>Step7 .</font></B> Clicked on AttendancePageScroller<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.emp.qa.testcases.HrmsAttendannceViewTest@55a147cc</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsHolidaysTest.HrmsHolidaysTest()'><b>HrmsHolidaysTest</b><br>Test class: com.emp.qa.testcases.HrmsHolidaysTest<br/>
+<a href="#Output-977780494" onClick='toggleBox("Output-977780494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-977780494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977780494">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Attendance<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Holidays<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on AddHolidayList<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on HolidayName<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on HolidayDate<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on AddMore<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on HolidayName2<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on HolidayDate2<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Create_Button<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.emp.qa.testcases.HrmsHolidaysTest@3c77d488</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeComponentandPerquisitesTest.HrmsEmployeeComponentandPerquisitesTest()'><b>HrmsEmployeeComponentandPerquisitesTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeComponentandPerquisitesTest<br/>
+<a href="#Output-1771292895" onClick='toggleBox("Output-1771292895", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1771292895" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1771292895">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on ComponentandPerquisites<br/>
+<B><font color = 'blue'>Step4 .</font></B> Etered Data into  SearchBar<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on SearchBarButtoon<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Scroller<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on ActionButton<br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered Amount into  Annualctc<br/>
+<B><font color = 'blue'>Step9 .</font></B> Entered Amount into  Monthlyctc<br/>
+<B><font color = 'blue'>Step10 .</font></B> Entered Amount into  Employerpf<br/>
+<B><font color = 'blue'>Step11 .</font></B> Entered Amount into  EmployerESIC<br/>
+<B><font color = 'blue'>Step12 .</font></B> Entered Amount into  GrossSalary<br/>
+<B><font color = 'blue'>Step13 .</font></B> Entered Amount into  BasicAllowance<br/>
+<B><font color = 'blue'>Step14 .</font></B> Entered Amount into  HRA<br/>
+<B><font color = 'blue'>Step15 .</font></B> Entered Amount into  MedicalAllowance<br/>
+<B><font color = 'blue'>Step16 .</font></B> Entered Amount into  LunchAllowance<br/>
+<B><font color = 'blue'>Step17 .</font></B> Entered Amount into  SpecialAllowance<br/>
+<B><font color = 'blue'>Step18 .</font></B> clicked on AdditionalComponent <br/>
+<B><font color = 'blue'>Step19 .</font></B> clicked on AdditionalComponentAddButton<br/>
+<B><font color = 'blue'>Step20 .</font></B> Entered name to AdditionalComponentHeader<br/>
+<B><font color = 'blue'>Step21 .</font></B> Entered value into AdditionalComponentHeadervalue<br/>
+<B><font color = 'blue'>Step22 .</font></B> clicked on DeductionComponents<br/>
+<B><font color = 'blue'>Step23 .</font></B> clicked on DeductionComponentsAddButton and added deduction components<br/>
+<B><font color = 'blue'>Step24 .</font></B> clicked on DeductionComponentsHeader and added deduction components name<br/>
+<B><font color = 'blue'>Step25 .</font></B> clicked on DeducComponentsHeadervalue<br/>
+<B><font color = 'blue'>Step26 .</font></B> clicked on SaveButton<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.emp.qa.testcases.HrmsEmployeeComponentandPerquisitesTest@6c1a5b54</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsAttendanceTest.HrmsAttendanceTest()'><b>HrmsAttendanceTest</b><br>Test class: com.emp.qa.testcases.HrmsAttendanceTest<br/>
+<a href="#Output-1533343601" onClick='toggleBox("Output-1533343601", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1533343601" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1533343601">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Attendance<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Locations<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  Department<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  DateRanges<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on  Search_bar<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on  Search_bar_button<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.emp.qa.testcases.HrmsAttendanceTest@1a942c18</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsSetupPayrollTest.HrmsSetupPayrollTest()'><b>HrmsSetupPayrollTest</b><br>Test class: com.emp.qa.testcases.HrmsSetupPayrollTest<br/>
+<a href="#Output-904396018" onClick='toggleBox("Output-904396018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-904396018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-904396018">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on SetupPayroll<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on PayrollSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on DoesYourCompanyHavepf<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on EmployeeContribution<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on PayRoll_SaveButton<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.emp.qa.testcases.HrmsSetupPayrollTest@4145bad8</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeTest.HrmsPayrollDeclarationOtherincomeTest()'><b>HrmsPayrollDeclarationOtherincomeTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeTest<br/>
+<a href="#Output-741827681" onClick='toggleBox("Output-741827681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-741827681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-741827681">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Declaration<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on OtherIncome<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Savings_Bank_Interest<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on FinancialYear_DropDown <br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Search_Bar<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Searchbar_click<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Bank_Details<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Scroller<br/>
+<B><font color = 'blue'>Step11.</font></B> clicked on Close_Button<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.emp.qa.testcases.HrmsPayrollDeclarationOtherincomeTest@2892d68</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollDelarationOtherincomeOneHousepropertyTest.HrmsPayrollDelarationOtherincomeOneHousepropertyTest()'><b>HrmsPayrollDelarationOtherincomeOneHousepropertyTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollDelarationOtherincomeOneHousepropertyTest<br/>
+<a href="#Output-866941236" onClick='toggleBox("Output-866941236", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-866941236" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-866941236">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Declaration<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on OtherIncome<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Onehouse_Property<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on FinancialYear_Dropdown<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on SearchBar<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Search_Button<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on MoreData_Button<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Close_Button<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.emp.qa.testcases.HrmsPayrollDelarationOtherincomeOneHousepropertyTest@3646a422</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsLeaveTypesTest.HrmsLeaveTypesTest()'><b>HrmsLeaveTypesTest</b><br>Test class: com.emp.qa.testcases.HrmsLeaveTypesTest<br/>
+<a href="#Output-2042575333" onClick='toggleBox("Output-2042575333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2042575333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2042575333">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Attendance<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  LeaveTypes<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  AddnewLeaveTypes<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  TypeofLeaves<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on  Numberofdays<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on  Duration_HalfyerlyRadioButton<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on  create_Button<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.emp.qa.testcases.HrmsLeaveTypesTest@738dc9b</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsTest.HrmsPayrollAdvancedSettingsPtsettingsTest()'><b>HrmsPayrollAdvancedSettingsPtsettingsTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsTest<br/>
+<a href="#Output-1170153187" onClick='toggleBox("Output-1170153187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1170153187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1170153187">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on AdvancedSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on PTSettings<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on PT_Settings<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Locations<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Start_value<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on End_value<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on value<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPtsettingsTest@46cdf8bd</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeExperienceDetailsTest.HrmsEmployeeExperienceDetailsTest()'><b>HrmsEmployeeExperienceDetailsTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeExperienceDetailsTest<br/>
+<a href="#Output-2045895214" onClick='toggleBox("Output-2045895214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2045895214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2045895214">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> Etered Data into  SearchBar<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on SearchBarButtoon<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  Scroller<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on ViewEmployeeInformation<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on ExperienceDetails<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on AddExperienceDetails<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on company_name<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Designation<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on ReportingManager<br/>
+<B><font color = 'blue'>Step12 .</font></B> clicked on ContactNumberof_ReportingManager<br/>
+<B><font color = 'blue'>Step13 .</font></B> clicked on Joining_Date<br/>
+<B><font color = 'blue'>Step14 .</font></B> clicked on Leaving_Date<br/>
+<B><font color = 'blue'>Step15 .</font></B> clicked on HRname<br/>
+<B><font color = 'blue'>Step16 .</font></B> clicked on HR_Mail_Id<br/>
+<B><font color = 'blue'>Step17 .</font></B> clicked on HR_contact_No<br/>
+<B><font color = 'blue'>Step18 .</font></B> clicked on Reason<br/>
+<B><font color = 'blue'>Step19 .</font></B> clicked on Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.emp.qa.testcases.HrmsEmployeeExperienceDetailsTest@20140db9</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPfTest.HrmsPayrollAdvancedSettingsPfTest()'><b>HrmsPayrollAdvancedSettingsPfTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPfTest<br/>
+<a href="#Output-1738334147" onClick='toggleBox("Output-1738334147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1738334147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1738334147">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on AdvancedSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on Pf_Esisettings<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Pf_settings<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on ProvidentfundStatusToggleButton<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on MonthlyAmountFORPfCalulation<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Employee_Pf<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Employer_Pf<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvancedSettingsPfTest@2ddc9a9f</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsComplianceDetailsTest.HrmsComplianceDetailsTest()'><b>HrmsComplianceDetailsTest</b><br>Test class: com.emp.qa.testcases.HrmsComplianceDetailsTest<br/>
+<a href="#Output-110197684" onClick='toggleBox("Output-110197684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-110197684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-110197684">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on ComplianceDetails<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on ComplianceDetails_Actions<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on IsEmployeeEligibleForPF<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on UanNumber<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on PFNumber<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on PFScheme<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on PFJoiningDate<br/>
+<B><font color = 'blue'>Step12 .</font></B> clicked on EsiNumber<br/>
+<B><font color = 'blue'>Step13 .</font></B> clicked on PanNumber<br/>
+<B><font color = 'blue'>Step14 .</font></B> clicked on Ctc<br/>
+<B><font color = 'blue'>Step14 .</font></B> clicked on Gross<br/>
+<B><font color = 'blue'>Step15 .</font></B> clicked on ComplianceDetails_Save<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.emp.qa.testcases.HrmsComplianceDetailsTest@6574a52c</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollSalaryRevisionTest.HrmsPayrollRunpayrollSalaryRevisionTest()'><b>HrmsPayrollRunpayrollSalaryRevisionTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollSalaryRevisionTest<br/>
+<a href="#Output-95654235" onClick='toggleBox("Output-95654235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-95654235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-95654235">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on RunPayroll<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on SalaryRevision<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on SalaryRevisionVerify_Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Next_Button<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollSalaryRevisionTest@644baf4a</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeFamilyDetailsTest.HrmsEmployeeFamilyDetailsTest()'><b>HrmsEmployeeFamilyDetailsTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeFamilyDetailsTest<br/>
+<a href="#Output-1635011037" onClick='toggleBox("Output-1635011037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1635011037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1635011037">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  Scroller<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on ViewEmployeeInformation<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on FamilyDetails<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on AddfamilyDetails<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on NameofFamlyMembers<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on MembersDob<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on RelationShip<br/>
+<B><font color = 'blue'>Step12 .</font></B> clicked on Occupation<br/>
+<B><font color = 'blue'>Step13 .</font></B> clicked on Contactno<br/>
+<B><font color = 'blue'>Step14 .</font></B> clicked on BloodGroup<br/>
+<B><font color = 'blue'>Step15 .</font></B> clicked on Aadharno<br/>
+<B><font color = 'blue'>Step16 .</font></B> clicked on Pan_number<br/>
+<B><font color = 'blue'>Step17 .</font></B> clicked on Save_FamilyDetails<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.emp.qa.testcases.HrmsEmployeeFamilyDetailsTest@1c7696c6</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeAllDetailsTest.HrmsEmployeeAllDetailsTest()'><b>HrmsEmployeeAllDetailsTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeAllDetailsTest<br/>
+<a href="#Output-731498807" onClick='toggleBox("Output-731498807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-731498807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-731498807">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Hrms Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Hrms BasicDetails<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on SearchBar And Entered Data into Search Bar <br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  SearchButton<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on  Scroller<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on  ViewEmployeeInformation_Button<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on  BasicDetailsView<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on  FamilyDetails<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on  Qualification_Details<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on  Experience_Details<br/>
+<B><font color = 'blue'>Step12 .</font></B> clicked on  BankDetails<br/>
+<B><font color = 'blue'>Step13 .</font></B> clicked on  Compliance_Details<br/>
+<B><font color = 'blue'>Step14 .</font></B> clicked on  Componentandprerequisites<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.emp.qa.testcases.HrmsEmployeeAllDetailsTest@1a6d8329</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollOverviewTest.HrmsPayrollRunpayrollOverviewTest()'><b>HrmsPayrollRunpayrollOverviewTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollOverviewTest<br/>
+<a href="#Output-924697710" onClick='toggleBox("Output-924697710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-924697710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-924697710">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on RunPayroll<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on Overview<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on June<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on July<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on August<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on September<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on October<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Next_Button<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollOverviewTest@26d9b808</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeQualificationDetailsTest.HrmsEmployeeQualificationDetailsPage()'><b>HrmsEmployeeQualificationDetailsPage</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeQualificationDetailsTest<br/>
+<a href="#Output-903297131" onClick='toggleBox("Output-903297131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-903297131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-903297131">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> Etered Data into  SearchBar<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on SearchBarButtoon<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  Scroller<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on ViewEmployeeInformation<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Qualification_Details<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on AddQualification_Details<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Qualification<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on Institution<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on University<br/>
+<B><font color = 'blue'>Step12 .</font></B> clicked on YearofPassing<br/>
+<B><font color = 'blue'>Step13 .</font></B> clicked on Percentage<br/>
+<B><font color = 'blue'>Step14 .</font></B> clicked on Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.emp.qa.testcases.HrmsEmployeeQualificationDetailsTest@60099951</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollAdvancedSettingsOverviewTest.HrmsPayrollAdvancedSettingsOverviewTest()'><b>HrmsPayrollAdvancedSettingsOverviewTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollAdvancedSettingsOverviewTest<br/>
+<a href="#Output-2041457939" onClick='toggleBox("Output-2041457939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2041457939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2041457939">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Payroll<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on AdvancedSettings<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on Pf_Esisettings<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on Overview<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on Search_bar<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on SearchBar_Button<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Scroller<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Edit_Button<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on PF_ApplicableToggleButton<br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on PF_JoinedDate<br/>
+<B><font color = 'blue'>Step12 .</font></B> clicked on EsiApplicableToggleButton<br/>
+<B><font color = 'blue'>Step13 .</font></B> clicked on Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.emp.qa.testcases.HrmsPayrollAdvancedSettingsOverviewTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeBankDetailsTest.HrmsEmployeeBankDetailsPage()'><b>HrmsEmployeeBankDetailsPage</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeBankDetailsTest<br/>
+<a href="#Output-1910492961" onClick='toggleBox("Output-1910492961", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1910492961" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1910492961">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on Employee<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on Bank_Details<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on BankDetailsAction<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on BankName<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on IfscCode<br/>
+<B><font color = 'blue'>Step7 .</font></B> clicked on Account_Number<br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on Branch_Adress<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on Save_BankDetails<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.emp.qa.testcases.HrmsEmployeeBankDetailsTest@1ffaf86</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest.HrmsPayrollRunpayrollRunpayrollTest()'><b>HrmsPayrollRunpayrollRunpayrollTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.110
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464715f905e295602114d78bc82c0399
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.emp.qa.base.TestBase.initialization(TestBase.java:195)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace891906535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace891906535'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.110
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464715f905e295602114d78bc82c0399
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.emp.qa.base.TestBase.initialization(TestBase.java:195)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollRunpayrollTest@7526515b</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest.HrmsPayrollRunpayrollPayregisterTest()'><b>HrmsPayrollRunpayrollPayregisterTest</b><br>Test class: com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f90bf0714ec51ad9d636acb9a0c694ca
+*** Element info: {Using=xpath, value=//input[@id=&apos;amember-login&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.LoginPage.login(LoginPage.java:64)
+	at com.emp.qa.base.TestBase.setUp(TestBase.java:248)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace140622943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace140622943'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f90bf0714ec51ad9d636acb9a0c694ca
+*** Element info: {Using=xpath, value=//input[@id=&apos;amember-login&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.LoginPage.login(LoginPage.java:64)
+	at com.emp.qa.base.TestBase.setUp(TestBase.java:248)
+	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.emp.qa.testcases.HrmsPayrollRunpayrollPayregisterTest@1ed4ae0f</td></tr>
+</table><p>
+</body>
+</html>

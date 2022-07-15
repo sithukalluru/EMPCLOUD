@@ -1,0 +1,520 @@
+<html>
+<head>
+<title>TestNG:  Hrms Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Hrms Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 23 10:50:36 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>464 seconds (464382 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest()'><b>HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest<br/>
+<a href="#Output-1998103567" onClick='toggleBox("Output-1998103567", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1998103567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1998103567">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Deduction Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  Section80C Button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: be5c8993bf2d19011798ead697ebe2f9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:221)
+	at com.emp.qa.pages.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cPage.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cPage(HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cPage.java:122)
+	at com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest(HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998103567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1998103567'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: be5c8993bf2d19011798ead697ebe2f9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:221)
+	at com.emp.qa.pages.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cPage.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cPage(HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cPage.java:122)
+	at com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest(HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDedudctionSection80cTest@1ed6388a</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest()'><b>HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest<br/>
+<a href="#Output-95640701" onClick='toggleBox("Output-95640701", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-95640701" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-95640701">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Deduction Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  Loans Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  AddNewLoans Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Entered  LoanName <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered LoanRequireDate<br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered LoanAmount<br/>
+<B><font color = 'blue'>Step9 .</font></B> clicked on  UploadDocument Button and Uploaded Document<br/>
+<B><font color = 'blue'>Step10 .</font></B> Entered  PurposeOfLoan <br/>
+<B><font color = 'blue'>Step11 .</font></B> Clicked on SaveButton <br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7a20f7f225f6b74eebcc47a5186a5c4
+*** Element info: {Using=css selector, value=(#kt_body &gt; div.swal2-container.swal2-center.swal2-backdrop-show &gt; div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanPage.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanPage(HrmsEmployeeDashBoardTaxDeclarationDeductionLoanPage.java:163)
+	at com.emp.qa.testcases.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest(HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace95640701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95640701'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-M6L0B2Q&apos;, ip: &apos;192.168.2.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Official\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7a20f7f225f6b74eebcc47a5186a5c4
+*** Element info: {Using=css selector, value=(#kt_body &gt; div.swal2-container.swal2-center.swal2-backdrop-show &gt; div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy12.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.emp.qa.util.Helpers.highLightElement(Helpers.java:212)
+	at com.emp.qa.pages.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanPage.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanPage(HrmsEmployeeDashBoardTaxDeclarationDeductionLoanPage.java:163)
+	at com.emp.qa.testcases.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest(HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashBoardTaxDeclarationDeductionLoanTest@4f80542f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOverviewTest.HrmsEmployeeDashboardTaxDeclarationOverviewTest()'><b>HrmsEmployeeDashboardTaxDeclarationOverviewTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOverviewTest<br/>
+<a href="#Output-1867177582" onClick='toggleBox("Output-1867177582", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1867177582" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1867177582">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  overviewpage Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  FinancialYearDropDown Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  NewTaxScheme Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> clicked on  OldTaxScheme Button<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOverviewTest@942a29c</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDelarationDeductionLtaTest.HrmsEmployeeDashboardTaxDelarationDeductionLtaTest()'><b>HrmsEmployeeDashboardTaxDelarationDeductionLtaTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDelarationDeductionLtaTest<br/>
+<a href="#Output-1599728268" onClick='toggleBox("Output-1599728268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1599728268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1599728268">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Deduction Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  Lta Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  AddnewLta Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Entered  ComponenetName <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered  DeclaredAmount <br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on  UploadDocument Button<br/>
+<B><font color = 'blue'>Step9 .</font></B> Entered  Date <br/>
+<B><font color = 'blue'>Step10 .</font></B> Entered  Comment <br/>
+<B><font color = 'blue'>Step11 .</font></B> clicked on  SaveButton <br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDelarationDeductionLtaTest@534a5a98</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardAttedanceTest.HrmsEmployeeDashboardAttedanceTest()'><b>HrmsEmployeeDashboardAttedanceTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardAttedanceTest<br/>
+<a href="#Output-296234255" onClick='toggleBox("Output-296234255", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-296234255" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-296234255">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Attendance Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  CheckoutButton<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardAttedanceTest@273e7444</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherincomeOnehousePropertyTest.HrmsEmployeeDashboardTaxDeclarationOtherincomeOnehousePropertyTest()'><b>HrmsEmployeeDashboardTaxDeclarationOtherincomeOnehousePropertyTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherincomeOnehousePropertyTest<br/>
+<a href="#Output-1796660881" onClick='toggleBox("Output-1796660881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1796660881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1796660881">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  OtherIncome Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  OneHouseProperty Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  AddHouseproperty Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Selected PropertyType Dropdown <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered  PropertyValue <br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on  Save_Button <br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherincomeOnehousePropertyTest@5e600dd5</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDasboardTaxDeclarationOtherincomePensionFamilyPensionTest.HrmsEmployeeDashboardTaxDelarationOtherincomeOtherthanSavingsTest()'><b>HrmsEmployeeDashboardTaxDelarationOtherincomeOtherthanSavingsTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDasboardTaxDeclarationOtherincomePensionFamilyPensionTest<br/>
+<a href="#Output-1855590605" onClick='toggleBox("Output-1855590605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1855590605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1855590605">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  OtherIncome Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  Pension_Family Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  AddFamily_Details Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Enntered MembersName  <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered  Relation <br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered on  Amount <br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered on  Date <br/>
+<B><font color = 'blue'>Step8 .</font></B> Clicked On Save_Button <br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDasboardTaxDeclarationOtherincomePensionFamilyPensionTest@576d5deb</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherIncomeSavigsBankInterestTest.HrmsEmployeeDashboardTaxDeclarationOtherIncomeSavigsBankInterestTest()'><b>HrmsEmployeeDashboardTaxDeclarationOtherIncomeSavigsBankInterestTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherIncomeSavigsBankInterestTest<br/>
+<a href="#Output-351297720" onClick='toggleBox("Output-351297720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-351297720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-351297720">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  OtherIncome Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  SavingsBankInterest Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  AddBankDetails Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Entered BankName <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered  Amount <br/>
+<B><font color = 'blue'>Step8 .</font></B> clicked on  Save_Button <br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherIncomeSavigsBankInterestTest@130c12b7</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardPayslipTest.HrmsEmployeeDashboardPayslipTest()'><b>HrmsEmployeeDashboardPayslipTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardPayslipTest<br/>
+<a href="#Output-876420389" onClick='toggleBox("Output-876420389", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-876420389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-876420389">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Payslip Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  DownloadPayslipButton<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardPayslipTest@2e3967ea</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardLeavesTest.HrmsEmployeeDashboardLeavesTest()'><b>HrmsEmployeeDashboardLeavesTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardLeavesTest<br/>
+<a href="#Output-1220813917" onClick='toggleBox("Output-1220813917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1220813917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1220813917">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  Attendance Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Leaves Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  addnew_Leave Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> Selected   Day_Type DropDown<br/>
+<B><font color = 'blue'>Step6 .</font></B> Selected   Leave_Type DropDown<br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered Leave Start_Date<br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered Leave  End_Date<br/>
+<B><font color = 'blue'>Step9 .</font></B> Succesfully Enterd  Reason<br/>
+<B><font color = 'blue'>Step10 .</font></B> clicked on  Save_Button<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardLeavesTest@3527942a</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDeductionHouserentTest.HrmsEmployeeDashboardTaxDeclarationDeductionHouserentTest()'><b>HrmsEmployeeDashboardTaxDeclarationDeductionHouserentTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDeductionHouserentTest<br/>
+<a href="#Output-818010696" onClick='toggleBox("Output-818010696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-818010696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-818010696">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  Deduction Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  HouseRent Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  AddnewHouseRent Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Entered   MonthlyHouseRent <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered DeclaredHouseRent<br/>
+<B><font color = 'blue'>8 .</font></B> Entered LandLord Name<br/>
+<B><font color = 'blue'>Step9 .</font></B> Entered Landlord PAN Number<br/>
+<B><font color = 'blue'>Step10 .</font></B> Entered Date Of Join Date<br/>
+<B><font color = 'blue'>Step11 .</font></B> Entered Address Into Address Field<br/>
+<B><font color = 'blue'>Step12 .</font></B> Clicked on DocumentUploadButton<br/>
+<B><font color = 'blue'>Step13 .</font></B> Entered Comment<br/>
+<B><font color = 'blue'>Step14 .</font></B> Clicked on SaveButton<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationDeductionHouserentTest@5a45133e</td></tr>
+<tr>
+<td title='com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherincomeIncomefrompreviousTest.HrmsEmployeeDashboardTaxDeclarationOtherincomeIncomefrompreviousTest()'><b>HrmsEmployeeDashboardTaxDeclarationOtherincomeIncomefrompreviousTest</b><br>Test class: com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherincomeIncomefrompreviousTest<br/>
+<a href="#Output-1617488818" onClick='toggleBox("Output-1617488818", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1617488818" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1617488818">
+<B><font color = 'blue'>Step1 .</font></B> clicked on Hrms Button<br/>
+<B><font color = 'blue'>Step2 .</font></B> clicked on  TaxDeclaration Button<br/>
+<B><font color = 'blue'>Step3 .</font></B> clicked on  OtherIncome Button<br/>
+<B><font color = 'blue'>Step4 .</font></B> clicked on  IncomefromPrevious Button<br/>
+<B><font color = 'blue'>Step5 .</font></B> clicked on  Addincome Button<br/>
+<B><font color = 'blue'>Step6 .</font></B> Entered StartDate  <br/>
+<B><font color = 'blue'>Step7 .</font></B> Entered  EndDate <br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered   EmployerName <br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered   IncomeFromEmployer <br/>
+<B><font color = 'blue'>Step8 .</font></B> Entered Tax_Deduction <br/>
+<B><font color = 'blue'>Step8 .</font></B> Clicked on   UploadDocumenButton and Uploaded the Document <br/>
+<B><font color = 'blue'>Step8 .</font></B> Clicked on SaveButton <br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.emp.qa.testcases.HrmsEmployeeDashboardTaxDeclarationOtherincomeIncomefrompreviousTest@5d534f5d</td></tr>
+</table><p>
+</body>
+</html>
